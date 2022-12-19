@@ -19,7 +19,7 @@ def generator(n, ops, d):
         while ops_times < k_ops:
             output_str = generate_k_ops(output_str, d)
             ops_times += 1
-        return output_str, output_str
+        return output_str, eval(output_str)
 
     # generate the kth operands
     def generate_k_ops(output_str, d):
